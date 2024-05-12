@@ -182,13 +182,13 @@ transform: scale(1, 1);
 /* 中央以外のスライド */
 .slick-img img {
   height: auto;
-  opacity: .3; /* スライドを薄くする*/
-  transform: scale(.8); /* スライドのサイズを80%にする*/
-  transition: opacity .5s, transform .5s; /* スライド透過率と拡大のアニメーション時間を0.5秒に設定*/
+  opacity: .3; /* スライドを薄くする */
+  transform: scale(.8); /* スライドのサイズを80%にする */
+  transition: opacity .5s, transform .5s; /* スライド透過率と拡大のアニメーション時間を0.5秒に設定 */
   width: 100%;
 }
 /* 中央のスライド */
 .slider .slick-center img {
-  opacity: 1; /* 中央のスライドは透過しない*/
-  transform: scale(1); /* 中央のスライドは小さくしない*/
+  opacity: 1; /* 中央のスライドは透過しない */
+  transform: scale(1); /* 中央のスライドは小さくしない */
 }
