@@ -174,78 +174,43 @@ transition: all 0.5s ease;
 /*横方向等倍まで拡大*/
 transform: scale(1, 1);
 }
-html, body{
-  margin: 0;
-  padding: 0;
-  background-color: #3498db;
-}
-*{
-  box-sizing: border-box;
-}
-.wrapper{
-  height: 100vh;
+.arrow_box {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.inner{
-  width: calc(100% - 100px);
-  max-width: 600px;
-}
-.slide>span{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  background: #fff;
-  color: #3498db;
-  font-size: 36px;
-  font-weight: bold;
+  justify-content: flex-end;
+  margin: 20px 0 0;
+  position: relative;
 }
 
-/* arrow */
-.slick-arrow{
-  z-index: 2;
-  top: 50%;
-  margin-top: -10px;
-  width: 20px;
-  height: 20px;
-  border-top: 3px solid #3498db;
-  border-right: 3px solid #3498db;
-  opacity: .8;
+.prev-arrow,
+.next-arrow {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: coral;
+  border-radius: 50%;
+  transition: all .3s ease;
+  cursor: pointer;
+  position:relative;
 }
-.slick-arrow::before{
-  content: '';
+
+.prev-arrow {
+  transform: rotate(180deg);
+  margin-right: 20px;
 }
-.slick-prev{
-  left: 30px;
-  transform: rotate(-135deg);
-}
-.slick-next{
-  right: 30px;
-  transform: rotate(45deg);
-}
-/* dots */
-.slick-dots{
-  bottom: -25px;
-}
-.slick-dots li,
-.slick-dots li button,
-.slick-dots li button::before{
-  width: 12px;
-  height: 12px;
-}
-.slick-dots li{
-  margin: 0 7px;
-}
-.slick-dots li button{
-  background-color: #fff;
-  opacity: .8;
-  border-radius: 100%;
-}
-.slick-dots li.slick-active button{
-  opacity: .4;
-}
-.slick-dots li button::before{
-  content: '';
+
+.prev-arrow::before,
+.next-arrow::before{
+  position:absolute;
+  content: "";
+  width:10px;
+  height:10px;
+  border-right: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  transform:rotate(45deg);
 }
