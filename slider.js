@@ -1,8 +1,12 @@
-$('.slider').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  arrows: true,
-  appendArrows: $('.arrow_box'),
-  prevArrow: '<div class="slide-arrow prev-arrow"></div>',
-  nextArrow: '<div class="slide-arrow next-arrow"></div>'
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
 });
