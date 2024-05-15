@@ -184,6 +184,7 @@ body { font-family: sans-serif; }
   background: #EEE;
   position: absolute;
   top: 1000px;
+  left: 500px;
 }
 
 .carousel-cell {
