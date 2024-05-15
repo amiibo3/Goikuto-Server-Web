@@ -182,10 +182,6 @@ body { font-family: sans-serif; }
 
 .carousel {
   background: #EEE;
-  position: relative;
-  top: 1000px;
-  left: 500px;
-}
 
 .carousel-cell {
   width: 100%;
