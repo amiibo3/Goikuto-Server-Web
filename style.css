@@ -182,7 +182,7 @@ body { font-family: sans-serif; }
 
 .carousel {
   background: #EEE;
-  position: absolute;
+  position: relative;
   top: 1000px;
   left: 500px;
 }
