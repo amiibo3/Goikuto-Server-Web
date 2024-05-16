@@ -179,7 +179,7 @@ transform: scale(1, 1);
   width: 70%; /* スライダーの幅を70%に設定 */
   margin: 0 auto;
   position: relative; /* 相対位置を設定 */
-  top: 800px; /* discord screen.png の下にスライダーを配置 */
+  top: 1500px; /* discord screen.png の下にスライダーを配置 */
 }
 
 .swiper-slide {
@@ -209,7 +209,7 @@ transform: scale(1, 1);
 
 /* 矢印の位置を調整 */
 .swiper-button-next, .swiper-button-prev {
-  top: 50%; /* 上端から50%の位置に */
+  top: 25%; /* 上端から50%の位置に */
   transform: translateY(-50%); /* 中央揃え */
 }
 
