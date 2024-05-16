@@ -221,7 +221,7 @@ transform: scale(1, 1);
 
 /* Swiper ページネーションのスタイル */
 .swiper-pagination {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 200px; /* 下端から10pxの位置に */
