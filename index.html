@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<div class="loading">
-    <img class="loading_logo" src="loding.png" alt="VOOL">
-</div>
-  <head>
-    <html lang="ja"></html>
+<html lang="ja">
+<head>
     <meta charset="UTF-8">
     <title>Home | Banana Empire</title>
     <link rel="stylesheet" href="destyle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="slider.js"></script>
-  </head>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
 <body>
     <header>
       <div>
-      <h1>
-        <a href="">
-          <img src="Logo.png" alt="Logo" class="HeaderLogo">
-        </a>
-      </h1>
-    </div>
+        <h1>
+          <a href="">
+            <img src="Logo.png" alt="Logo" class="HeaderLogo">
+          </a>
+        </h1>
+      </div>
       <nav class="header-nav">
         <ul>
           <li><a href="" class=about>ABOUT</a></li>
@@ -39,7 +34,7 @@
         </a>
       </h1>
     </div>
-      <nav class="header-nav">
+    <nav class="header-nav">
         <ul>
           <li><a href="" class=about>About</a></li>
           <li><a href="https://disboard.org/ja/server/1044215144714076220" class=disboard>DISBOARD</a></li>
@@ -47,28 +42,47 @@
           <img src="backgroud.png" class="backgroud" width="70%" height="70%">
           <li><a href="https://discord.gg/AxBqTgQjZd" class=discord>Join Server</a></li>
         </ul>
-      </nav>
-    </div>
-    </header>
+    </nav>
     <div>
       <h1 class="promotion1">Banana Empire</h1>
       <h1 class="promotion2">Largest country-based server in history</h1>
       <img src="discord screen.png" class="discordscreen">
     </div>
-<!-- Swiper -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 4</div>
-    <div class="swiper-slide">Slide 5</div>
-    <div class="swiper-slide">Slide 6</div>
-    <div class="swiper-slide">Slide 7</div>
-    <div class="swiper-slide">Slide 8</div>
-    <div class="swiper-slide">Slide 9</div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="slide1.jpg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="slide2.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="slide3.jpg" alt="Slide 3"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
