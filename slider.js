@@ -1,12 +1,11 @@
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true
-});
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
+const swiper = new Swiper(".swiper", {
+  // ページネーションが必要なら追加
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  // ナビボタンが必要なら追加
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
 });
