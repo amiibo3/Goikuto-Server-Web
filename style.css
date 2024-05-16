@@ -229,6 +229,9 @@ transform: scale(1, 1);
 }
 .slideup-scroll_fadein{
   opacity: 0;
+  position: absolute;
+  left: 300px;
+  top: 1500px;
 }
 .fadein_animation_start{
   animation-name: fadein_animation;
