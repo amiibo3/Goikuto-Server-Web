@@ -180,7 +180,7 @@ transform: scale(1, 1);
   width: 70%; /* スライダーの幅を70%に設定 */
   margin: 0 auto;
   position: relative; /* 相対位置を設定 */
-  top: 1500px; /* discord screen.png の下にスライダーを配置 */
+  top: 600px; /* discord screen.png の下にスライダーを配置 */
 }
 
 .swiper-slide {
@@ -226,4 +226,34 @@ transform: scale(1, 1);
   right: 0;
   bottom: 10px; /* 下端から10pxの位置に */
   z-index: 10;
+}
+.scroll_fadein{
+  opacity: 0;
+}
+.fadein_animation_start{
+  animation-name: fadein_animation;
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadein_animation{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.slideup{
+  transform: translateY(50px);
+}
+.slidedown{
+  transform: translateY(-50px);
+}
+.slideright{
+  transform: translateX(50px);
+}
+.slideleft{
+  transform: translateX(-50px);
 }
