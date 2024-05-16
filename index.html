@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <title>Home | Banana Empire</title>
     <link rel="stylesheet" href="destyle.css">
-    <script src="slider.js"></script>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -15,6 +14,7 @@
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="slider.js"></script>
   </head>
 <body>
     <header>
@@ -58,15 +58,25 @@
       <h1 class="promotion2">Largest country-based server in history</h1>
       <img src="discord screen.png" class="discordscreen">
     </div>
-<!-- スライダーのコンテナ -->
+<!-- Slider main container -->
 <div class="swiper">
-  <!-- 必要に応じたwrapper -->
+  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <!-- スライド -->
+    <!-- Slides -->
     <div class="swiper-slide">Slide 1</div>
     <div class="swiper-slide">Slide 2</div>
     <div class="swiper-slide">Slide 3</div>
+    ...
   </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
 </div>
   </body>
 </html>
