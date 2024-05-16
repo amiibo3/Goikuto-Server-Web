@@ -51,53 +51,31 @@
     <h1  class="slideup scroll_fadein">サーバーの長所を確認</h1>
     <!-- Swiper -->
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="discord screen.png" alt="Slide 1"></div>
-            <div class="swiper-slide"><img src="Logo.png" alt="Slide 2"></div>
-            <div class="swiper-slide"><img src="loding.png" alt="Slide 3"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="slide1.jpg" alt="Slide 1"></div>
+          <div class="swiper-slide"><img src="slide2.jpg" alt="Slide 2"></div>
+          <div class="swiper-slide"><img src="slide3.jpg" alt="Slide 3"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+  </div>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
-    <script>
-      $(function () {
-  $(window).scroll(function(){
-    var windowHeight = $(window).height(),
-    scrollY = $(window).scrollTop();
-    $('.scroll_fadein').each(function(){
-      var thisPosition = $(this).offset().top;
-      if(scrollY > thisPosition - windowHeight){
-        $(this).addClass('fadein_animation_start');
-      }
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'fade', // フェードアウト効果
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
     });
-  });
-});
-    </script>
+  </script>
   </body>
 </html>
