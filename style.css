@@ -227,7 +227,7 @@ transform: scale(1, 1);
   bottom: 10px; /* 下端から10pxの位置に */
   z-index: 10;
 }
-.scroll_fadein{
+.slideup-scroll_fadein{
   opacity: 0;
 }
 .fadein_animation_start{
