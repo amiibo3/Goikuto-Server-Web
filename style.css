@@ -224,7 +224,7 @@ transform: scale(1, 1);
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 10px; /* 下端から10pxの位置に */
+  bottom: 200px; /* 下端から10pxの位置に */
   z-index: 10;
 }
 .slideup-scroll_fadein{
