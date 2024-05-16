@@ -174,37 +174,35 @@ transition: all 0.5s ease;
 /*横方向等倍まで拡大*/
 transform: scale(1, 1);
 }
-.swiper {
-width: 100%;
-height: 100%;
+/* Swiper */
+.swiper-container {
+  width: 80%; /* スライダーの幅を80%に設定 */
+  height: 500px; /* スライダーの高さを500pxに設定 */
+  margin: 20px auto;
 }
 
 .swiper-slide {
-text-align: center;
-font-size: 18px;
-background: #fff;
-/* Center slide text vertically */
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-
-.swiper-wrapper {
-transition-timing-function: linear;
+  width: 100%;
+  height: 100%; /* スライダーの画像がコンテナの高さに合わせて表示されるようにする */
+  object-fit: cover; /* 画像がコンテナに収まるようにスケーリング */
 }
