@@ -5,8 +5,25 @@
     <title>Home | Banana Empire</title>
     <link rel="stylesheet" href="destyle.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
 </head>
 <body>
     <header>
@@ -49,59 +66,18 @@
       <img src="discord-screen.png" class="discordscreen">
     </div>
     <h1  class="slideup-scroll_fadein">サーバーの長所を確認</h1>
-    <script>
-      $(function () {
-  $(window).scroll(function(){
-    var windowHeight = $(window).height(),
-    scrollY = $(window).scrollTop();
-    $('.scroll_fadein').each(function(){
-      var thisPosition = $(this).offset().top;
-      if(scrollY > thisPosition - windowHeight){
-        $(this).addClass('fadein_animation_start');
-      }
-    });
-  });
-});
-    </script>
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="loding.png" alt="Slide 1"></div>
-          <div class="swiper-slide"><img src="Logo.png" alt="Slide 2"></div>
-          <div class="swiper-slide"><img src="discord-screen.png" alt="Slide 3"></div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+    <!-- discord-screen.pngの下にスライドショーを追加 -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- 各スライドを追加 -->
+    <div class="swiper-slide"><img src="test.png" alt="Slide 1"></div>
+    <div class="swiper-slide"><img src="test.png" alt="Slide 2"></div>
+    <div class="swiper-slide"><img src="test.png" alt="Slide 3"></div>
+    <!-- さらにスライドを追加できます -->
   </div>
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'fade', // フェードアウト効果
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      on: {
-        slideChangeTransitionStart: function() {
-          // 前のスライドを非表示にする
-          var previousSlide = this.slides[this.previousIndex];
-          previousSlide.classList.add('swiper-slide-hidden');
-        },
-        slideChangeTransitionEnd: function() {
-          // フェードアウトが完了したら非表示クラスを削除する
-          var previousSlide = this.slides[this.previousIndex];
-          previousSlide.classList.remove('swiper-slide-hidden');
-        }
-      }
-    });
-  </script>
+  <!-- ナビゲーションボタン -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
   </body>
 </html>

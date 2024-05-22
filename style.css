@@ -175,88 +175,17 @@ transition: all 0.5s ease;
 /*横方向等倍まで拡大*/
 transform: scale(1, 1);
 }
-/* Swiper */
 .swiper-container {
-  width: 70%; /* スライダーの幅を70%に設定 */
-  margin: 0 auto;
-  position: relative; /* 相対位置を設定 */
-  top: 800px; /* discord screen.png の下にスライダーを配置 */
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  width: 1200px;
+  height: 500px;
+  margin-top: 150px; /* discord-screen.pngの下から150pxの位置に設定 */
+  position: relative; /* 中央揃えのために追加 */
+  left: 50%; /* 中央揃えのために追加 */
+  transform: translateX(-50%); /* 中央揃えのために追加 */
 }
 
 .swiper-slide img {
-  max-width: 100%; /* 画像がスライドの幅に収まるように */
-  max-height: 100%; /* 画像がスライドの高さに収まるように */
-}
-
-/* 矢印の位置を調整 */
-.swiper-button-next, .swiper-button-prev {
-  top: 25%; /* 上端から50%の位置に */
-  transform: translateY(-50%); /* 中央揃え */
-}
-
-/* discord screen.png の下にスライダーを配置するための調整 */
-.discordscreen {
-  position: relative; /* 相対位置を設定 */
-}
-
-/* Swiper ページネーションのスタイル */
-.swiper-pagination {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px; /* 下端から10pxの位置に */
-  z-index: 10;
-}
-.slideup-scroll_fadein{
-  opacity: 0;
-  position: absolute;
-  left: 300px;
-  top: 1000px;
-}
-.fadein_animation_start{
-  animation-name: fadein_animation;
-  animation-delay: 0.3s;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-@keyframes fadein_animation{
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-.slideup{
-  transform: translateY(50px);
-}
-.slidedown{
-  transform: translateY(-50px);
-}
-.slideright{
-  transform: translateX(50px);
-}
-.slideleft{
-  transform: translateX(-50px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
