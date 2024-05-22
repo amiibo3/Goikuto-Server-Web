@@ -178,8 +178,8 @@ transform: scale(1, 1);
 .swiper-container {
   width: 1200px;
   height: 500px;
-  margin-top: 150px; /* discord-screen.pngの下から150pxの位置に設定 */
-  position: relative; /* 中央揃えのために追加 */
+  top: 2000px; /* discord-screen.pngの下から150pxの位置に設定 */
+  position: absolute; /* 中央揃えのために追加 */
   left: 50%; /* 中央揃えのために追加 */
   transform: translateX(-50%); /* 中央揃えのために追加 */
 }
