@@ -175,16 +175,3 @@ transition: all 0.5s ease;
 /*横方向等倍まで拡大*/
 transform: scale(1, 1);
 }
-.swiper-container {
-  width: 1200px;
-  height: 500px;
-  top: 2000px; /* discord-screen.pngの下から150pxの位置に設定 */
-  position: absolute; /* 中央揃えのために追加 */
-  left: 50%; /* 中央揃えのために追加 */
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
