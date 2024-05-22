@@ -185,11 +185,11 @@ tml {
 .slideshow {
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  top: 1500px;
+  left: 500px;
+  width: 70vw;
+  height: 70vh;
+  overflow: show;
   
   .slider {
     width: 100vw;
