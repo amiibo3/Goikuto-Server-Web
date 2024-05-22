@@ -181,7 +181,6 @@ transform: scale(1, 1);
   top: 2000px; /* discord-screen.pngの下から150pxの位置に設定 */
   position: absolute; /* 中央揃えのために追加 */
   left: 50%; /* 中央揃えのために追加 */
-  transform: translateX(-50%); /* 中央揃えのために追加 */
 }
 
 .swiper-slide img {
