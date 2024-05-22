@@ -178,4 +178,10 @@ transform: scale(1, 1);
 .swiper {
   width: 600px;
   height: 300px;
+  position: absolute;
+  top: 1500px;
+  left: 400px;
+}
+.swiper-slide {
+  color: #fff;
 }
