@@ -212,37 +212,21 @@ transform: scale(1, 1);
   height: 100%;
   border-radius: 25px;
 }
-.scroll_fadein{
-  opacity: 0;
+.fade{
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
 }
-.fadein_animation_start{
-  /* キーフレームアニメーションを指定 */
-  animation-name: fadein_animation;
-  /* アニメーションの開始時間の遅延 */
-  animation-delay: 0.3s;
-  /* アニメーションの時間を指定 */
-  animation-duration: 1s;
-  /*アニメーション再生後のスタイルを指定 */
-  animation-fill-mode: both;
+.scroll{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 80px;
+  margin-top: 100px;
 }
-@keyframes fadein_animation{
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-.slideup{
-  transform: translateY(50px);
-}
-.slidedown{
-  transform: translateY(-50px);
-}
-.slideright{
-  transform: translateX(50px);
-}
-.slideleft{
-  transform: translateX(-50px);
+.scroll-fadein{
+  aspect-ratio: 16 / 9;
+  background-color: #dedede;
 }
