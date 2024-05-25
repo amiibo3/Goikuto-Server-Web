@@ -212,39 +212,3 @@ transform: scale(1, 1);
   height: 100%;
   border-radius: 25px;
 }
-.fade{
-  max-width: 1200px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 20px;
-}
-.scroll{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  row-gap: 80px;
-  margin-top: 100px;
-}
-.scroll-fadein{
-  aspect-ratio: 16 / 9;
-  background-color: #dedede;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 1s;
-  transform: translateY(150px);
-  position: absolute;
-  top: 1360px;
-  color: #fff;
-  font-size: 70px;
-  left: 330px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-}
-.is-active {
-  /*要素を表示させる*/
-  opacity: 1;
-  visibility: visible;
-  /*元の位置に戻す*/
-  transform: translateY(0);
-}
