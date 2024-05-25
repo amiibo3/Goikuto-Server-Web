@@ -8,83 +8,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="slider.js"></script>
     <header>
-      <div>
-        <h1>
-          <a href="">
-            <img src="Logo.png" alt="Logo" class="HeaderLogo">
-          </a>
-        </h1>
-      </div>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="" class=about>ABOUT</a></li>
-          <li><a href="https://disboard.org/ja/server/1044215144714076220" class=disboard>DISBOARD</a></li>
-          <li><a href="https://amiibo3.github.io/Banana-Empire-Site/japanese.html" class="japanese">日本語</a></li>
-          <img src="backgroud.png" class="backgroud" width="70%" height="70%">
-          <li><a href="https://discord.gg/AxBqTgQjZd" class=discord>Join server</a></li>
-        </ul>
-      </nav>
+        <div>
+            <h1>
+                <a href="">
+                    <img src="Logo.png" alt="Logo" class="HeaderLogo">
+                </a>
+            </h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="" class="about">ABOUT</a></li>
+                <li><a href="https://disboard.org/ja/server/1044215144714076220" class="disboard">DISBOARD</a></li>
+                <li><a href="https://amiibo3.github.io/Banana-Empire-Site/japanese.html" class="japanese">日本語</a></li>
+                <li><a href="https://discord.gg/AxBqTgQjZd" class="discord">Join server</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <div>
-      <h1>
-        <a href="">
-          <img src="Logo.png" alt="Logo" class="HeaderLogo">
-        </a>
-      </h1>
+        <h1 class="promotion1">Banana Empire</h1>
+        <h1 class="promotion2">Largest country-based server in history</h1>
+        <img src="discord-screen.png" class="discordscreen">
     </div>
-    <nav class="header-nav">
-        <ul>
-          <li><a href="" class=about>About</a></li>
-          <li><a href="https://disboard.org/ja/server/1044215144714076220" class=disboard>DISBOARD</a></li>
-          <li><a href="https://amiibo3.github.io/Banana-Empire-Site/index.html" class="japanese">日本語</a></li>
-          <img src="backgroud.png" class="backgroud" width="70%" height="70%">
-          <li><a href="https://discord.gg/dbeGak5yMy" class=discord>Join Server</a></li>
-        </ul>
-    </nav>
-    <div>
-      <h1 class="promotion1">Banana Empire</h1>
-      <h1 class="promotion2">Largest country-based server in history</h1>
-      <img src="discord-screen.png" class="discordscreen">
-    </div>
-    <!--<h1  class="slideup-scroll_fadein">サーバーの長所を確認</h1>-->
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
-  </script>
-  </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
 </html>
