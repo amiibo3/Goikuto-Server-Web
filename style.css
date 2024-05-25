@@ -188,6 +188,7 @@ transform: scale(1, 1);
   position: absolute;
   top: 1500px;
   left: 345px;
+  border-radius: 25px;
 }
 
 .swiper-slide {
@@ -197,6 +198,7 @@ transform: scale(1, 1);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
 }
 
 .swiper-slide img {
