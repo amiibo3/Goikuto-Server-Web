@@ -233,6 +233,13 @@ transform: scale(1, 1);
   visibility: hidden;
   transition: all 1s;
   transform: translateY(150px);
+  position: absolute;
+  top: 1360px;
+  color: #fff;
+  font-size: 70px;
+  left: 330px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 .is-active {
   /*要素を表示させる*/
