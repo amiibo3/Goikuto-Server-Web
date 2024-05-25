@@ -91,6 +91,7 @@ position: absolute;
 position:fixed;
 border-radius: 100px;
 left: 868px;
+z-index: 6;
 }
 header {
 position: fixed;
@@ -105,6 +106,7 @@ top: 0px;
 position: absolute;
 left: 1436px;
 top: 39px;
+z-index: 7;
 }
 .japanese {
 position: absolute;
