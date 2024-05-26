@@ -11,7 +11,7 @@ body{
   background-color: #000000;
   z-index:-1;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: visible;
 }
 .loading {
   position: fixed;
