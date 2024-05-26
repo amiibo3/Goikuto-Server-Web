@@ -160,8 +160,18 @@ left: 550px;
   font-weight: 900;
   color: #fff;
   position: absolute;
-  top: 1600px;
-  left: 325px;
+  top: 1800px;
+  left: 625px;
+}
+.always-description {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  opacity: 0.5;
+  color: #fff;
+  position: absolute;
+  top: 1850px;
+  left: 625px;
 }
 .header-nav ul li {
   font-size: 18px;
@@ -235,18 +245,14 @@ transform: scale(1, 1);
 	text-align: center;
 }
 .cp_arrows .cp_arrow {
-	position: relative;
-	display: inline-block;
-	padding-top: 1.8em;
+	position: absolute;
 	-webkit-transition: all 0.3s ease-out;
 	        transition: all 0.3s ease-out;
 	-webkit-animation: arrow-move06 2s 1s ease-in-out infinite;
 	        animation: arrow-move06 2s 1s ease-in-out infinite;
-	text-decoration: none;
 	color: #3b3b3b;
 	border-color: #3b3b3b;
-  top: 1500px;
-  left: 850px;
+  left: 920px;
 }
 .cp_arrows .cp_arrow:before {
 	font-size: 2em;
@@ -256,47 +262,24 @@ transform: scale(1, 1);
 	left: 50%;
 	width: 2em;
 	height: 2em;
-	margin-left: -0.7em;
 	content: '▼';
 	-webkit-transition: transform 0.5s ease-in;
-	        transition: transform 0.5s ease-in;
-	text-align: center;
+	transition: transform 0.5s ease-in;
 	border: 0.13em solid #ffffff;
 	border-color: inherit;
 	border-radius: 10em;
 }
-.cp_arrows .cp_arrow:hover {
-	color: #ec407a;
-	border-color: #ec407a;
-}
-.cp_arrows .cp_arrow:hover:before {
-	transform: rotate(360deg);
-}
-@-webkit-keyframes arrow-move06 {
-	0% {
-		top: 1%;
-		opacity: 0.1;
-	}
-	70% {
-		top: 5%;
-		opacity: 1;
-	}
-	100% {
-		top: 1%;
-		opacity: 0.3;
-	}
-}
 @keyframes arrow-move06 {
 	0% {
-		top: 1%;
+		top: 230%;
 		opacity: 0.1;
 	}
 	70% {
-		top: 5%;
+		top: 235%;
 		opacity: 1;
 	}
 	100% {
-		top: 1%;
+		top: 230%;
 		opacity: 0.3;
 	}
 }
