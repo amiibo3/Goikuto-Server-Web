@@ -215,6 +215,11 @@ transition: all 0.5s ease;
 /*横方向等倍まで拡大*/
 transform: scale(1, 1);
 }
+.info {
+  position: absolute;
+  top: 1500px;
+  left: 500px;
+}
 .swiper {
   width: 70%;
   height: 300%;
