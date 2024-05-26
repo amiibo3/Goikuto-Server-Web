@@ -10,7 +10,6 @@ body{
   width: 90%;
   background-color: #000000;
   z-index:-1;
-  resize: none;
 }
 .loading {
   position: fixed;
