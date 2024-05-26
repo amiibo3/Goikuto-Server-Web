@@ -147,7 +147,7 @@ left: 550px;
 }
 .server-promotion-text {
   position: relative;
-  top: 660px;
+  top: 1660px;
   color: #fff;
   font-size: 70px;
   left: 390px;
@@ -160,8 +160,8 @@ left: 550px;
   font-weight: 900;
   color: #fff;
   position: absolute;
-  top: 1800px;
-  left: 625px;
+  top: 2900px;
+  left: 635px;
 }
 .always-description {
   font-size: 50px;
@@ -170,19 +170,16 @@ left: 550px;
   opacity: 0.5;
   color: #fff;
   position: absolute;
-  top: 1950px;
+  top: 3050px;
   left: 375px;
-}
-.server-promotion {
-  position: relative;
-  top: 1000px;
 }
 .server-promotion-picture1 {
   position: absolute;
-  top: 2050px;
+  top: 3200px;
   left: 515px;
   width: 50%;
   height: 250%;
+  z-index: 100;
 }
 .header-nav ul li {
   font-size: 18px;
@@ -222,7 +219,7 @@ transform: scale(1, 1);
   width: 70%;
   height: 300%;
   position: absolute;
-  top: 1500px;
+  top: 1600px;
   left: 345px;
   border-radius: 25px;
 }
@@ -282,15 +279,15 @@ transform: scale(1, 1);
 }
 @keyframes arrow-move06 {
 	0% {
-		top: 230%;
+		top: 560%;
 		opacity: 0.1;
 	}
 	70% {
-		top: 235%;
+		top: 565%;
 		opacity: 1;
 	}
 	100% {
-		top: 230%;
+		top: 560%;
 		opacity: 0.3;
 	}
 }
