@@ -164,14 +164,21 @@ left: 550px;
   left: 625px;
 }
 .always-description {
-  font-size: 30px;
+  font-size: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   opacity: 0.5;
   color: #fff;
   position: absolute;
-  top: 1850px;
-  left: 625px;
+  top: 1950px;
+  left: 375px;
+}
+.server-promotion-picture1 {
+  position: absolute;
+  top: 2050px;
+  left: 375px;
+  width: 100%;
+  height: 100%;
 }
 .header-nav ul li {
   font-size: 18px;
