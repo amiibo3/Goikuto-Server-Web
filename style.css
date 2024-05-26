@@ -145,8 +145,8 @@ top: 300px;
 left: 550px;
 }
 .server-promotion {
-  position: absolute;
-  top: 1360px;
+  position: relative;
+  top: 660px;
   color: #fff;
   font-size: 70px;
   left: 330px;
