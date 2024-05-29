@@ -76,11 +76,11 @@ font-weight: 600;
 }
 /*ナビゲーションのスタイル*/
 .about {
-margin: 40px 10% 0;
+margin: 39px 10% 0;
 left: 200px;
 }
 .disboard {
-margin: 40px 20% 0;
+margin: 39px 20% 0;
 left: 200px;
 }
 .background {
@@ -173,13 +173,62 @@ left: 550px;
   top: 3050px;
   left: 375px;
 }
+.various-games {
+  position: absolute;
+  top: 3900px;
+  left: 610px;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+.games-description1 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  opacity: 0.5;
+  color: #fff;
+  position: absolute;
+  top: 4050px;
+  left: 500px;
+}
+.games-description2 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  opacity: 0.5;
+  color: #fff;
+  position: absolute;
+  top: 4120px;
+  left: 585px;
+}
 .server-promotion-picture1 {
   position: absolute;
   top: 3200px;
   left: 515px;
   width: 50%;
   height: 250%;
-  z-index: 100;
+}
+.server-promotion-picture2 {
+  position: absolute;
+  top: 4270px;
+  left: 725px;
+}
+.join {
+  position: absolute;
+  top: 5200px;
+  left: 500px;
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  z-index : 0;
+}
+.discord-widget {
+  position: absolute;
+  top: 5400px;
+  left: 790px;
 }
 .header-nav ul li {
   font-size: 18px;
@@ -217,8 +266,12 @@ transform: scale(1, 1);
 }
 .info {
   position: absolute;
-  top: 1500px;
-  left: 500px;
+  top: 300px;
+  left: 340px;
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #fff;
 }
 .swiper {
   width: 70%;
@@ -295,4 +348,9 @@ transform: scale(1, 1);
 		top: 560%;
 		opacity: 0.3;
 	}
+}
+.cp_arrow2 {
+  position: absolute;
+  top: 5000px;
+  ;eft
 }
