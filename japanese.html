@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<div class="loading">
-    <img class="loading_logo" src="loding.png">
-</div>
-  <head>
-    <link rel="stylesheet" href="destyle.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<html lang="ja">
+<head>
     <meta charset="UTF-8">
-    <html lang="ja"></html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Home | バナナ帝国</title>
-    <!-- CSS -->
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="japanese.css">
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 <body>
     <header>
-      <div>
-      <h1>
-        <a href="">
-          <img src="Logo.png" alt="Logo" class="HeaderLogo">
-        </a>
-      </h1>
-    </div>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="" class=about>私たちについて</a></li>
-          <li><a href="https://disboard.org/ja/server/1044215144714076220" class=disboard>DISBOARD</a></li>
-          <li><a href="https://amiibo3.github.io/Banana-Empire-Site/index.html" class="english">English</a></li>
-          <img src="backgroud.png" class="backgroud" width="70%" height="70%">
-          <li><a href="https://discord.gg/AxBqTgQjZd" class=discord>サーバーに参加</a></li>
-        </ul>
-      </nav>
+        <div>
+            <h1>
+                <a href="">
+                    <img src="Logo.png" alt="Logo" class="HeaderLogo">
+                </a>
+            </h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="" class="about"> 私たちについて</a></li>
+                <li><a href="https://disboard.org/ja/server/1044215144714076220" class="disboard">DISBOARD</a></li>
+                <li><a href="https://amiibo3.github.io/Banana-Empire-Site/index.html" class="english">English</a></li>
+                <li><a href="https://discord.gg/ttQrbxPRuN" class="discord">サーバーに参加</a></li>
+                <li><img src="backgroud.png" class="background"></li>
+            </ul>
+        </nav>
     </header>
+    
     <div>
-      <h1 class="promotion1">バナナ帝国</h1>
-      <h1 class="promotion2">史上最大の国系サーバー</h1>
-      <img src="discord screen.png" class="discordscreen">
+        <h1 class="promotion1">バナナ帝国</h1>
+        <h1 class="promotion2">Discord史上最大の国系サーバー</h1>
+        <img src="discord-screen.png" class="discordscreen">
+    </div>
+<div class="server-promotion">
+    <div data-aos="fade-up"><h1 alt="" class="server-promotion-text" >サーバーの利点をチェック</h1></div>
+    <div class="cp_arrows">
+        <a class="cp_arrow"></a>
+    </div>
+</div>
+<div data-aos="fade-up"><h1 class="info">サーバー情報</h1></div>
+   <!-- Swiper-Slides -->
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="server-info1-jp.png"></div>
+            <div class="swiper-slide"><img src="server-info2-jp.png"></div>
+            <div class="swiper-slide"><img src="server-info3-jp.png"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+<div class="server-promotion">
+    <div class="server-promotion1">
+        <h1 class="always-active">常に活発</h1>
+        <h2 class="always-description">このサーバーは、常に何らかの会話がされています。</h2>
+        <img src="server-promotion1.png" class="server-promotion-picture1">
+        <h1 class="various-games">様々なゲーム</h1>
+        <h2 class="games-description1">AIチャットによるディベート、カジノ、しりとりなど、</h2>
+        <h2 class="games-description2">さまざまなゲームがあります。</h2>
+        <img src="server-promotion2.png" class="server-promotion-picture2">
+    </div>
+</div>
+<h1 class="join">今すぐバナナ帝国に参加しよう！</h1>
+<iframe class="discord-widget" src="https://discord.com/widget?id=1244928084956938310&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<a href="#"><img class="cp_arrow2" src="arrow.png"></a>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
 
-      <h1 class="server-strong-point">サーバーの長所を確認</h1>
-      <!-- Flickity HTML init -->
-      <div id="main-gallery">
-        <div class="gallery-cell"><img src="Logo.png"></div>
-        <div class="gallery-cell"><img src="loding.png"></div>
-        <div class="gallery-cell"><img src="discord screen.png"></div>
-      </div>
-  </body>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+<script>
+    window.onload = function() {
+      AOS.init({
+        offset: 400,
+        delay: 500,
+        duration: 500,
+        easing: 'ease-out',
+        anchorPlacement: 'top-top',
+        once: false
+      });
+    };
+</script>
+<link rel="stylesheet" href="aos-master/dist/aos.css"/>
+<script src="aos-master/dist/aos.js"></script>
+</body>
 </html>
