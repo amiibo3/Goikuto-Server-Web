@@ -1,14 +1,14 @@
 .HeaderLogo {
-  width: 5%;
+  width: 100px;
   position:fixed;
-  left: 903px;
+  left: 100px;
   top: 3px;
 }
 body{
   position: relative;
   height: 200px;
   width: 90%;
-  background-color: #000000;
+  background-color: #abdae9;
   z-index:-1;
   overflow-x: hidden;
   overflow-y: visible;
@@ -76,58 +76,76 @@ font-weight: 600;
 }
 /*ナビゲーションのスタイル*/
 .about {
-margin: 39px 10% 0;
-left: 200px;
+top: 40px;
+left: 300px;
+font-size: 100%;
+color: #3b3b3b;
 }
 .disboard {
-margin: 39px 20% 0;
-left: 200px;
+top: 40px;
+left: 500px;
+font-size: 100%;
+color: #3b3b3b;
 }
 .background {
-margin: 10px 25% 0;
-top: 6px;
-width:auto;
+top: 16px;
 height: 70px;
 position: absolute;
 position:fixed;
 border-radius: 100px;
-left: 868px;
+right: 93px;
 z-index: 6;
 }
+.background2 {
+  top: 410px;
+  width: 270px;;
+  height: 70px;
+  position: absolute;
+  border-radius: 100px;
+  left: 808px;
+  z-index: 6;
+  }
 header {
 position: fixed;
-background: #202020;
-color: #202020;
+background: #ffffff;
+color: #ffffff;
 z-index: 5;
 width: 100%;
-height: 100px;
+height: 105px;
 top: 0px;
+box-shadow: 0px 0px 20px -5px #fff;
 }
 .discord {
 position: absolute;
-left: 1436px;
-top: 39px;
+right: 193px;
+position:fixed;
+top: 41px;
 z-index: 7;
 }
+.discord2 {
+  position: absolute;
+  left: 903px;
+  top: 432px;
+  z-index: 7;
+  }
 .japanese {
 position: absolute;
-left: 1220px;
+right: 500px;
 top: 39px;
+color: #3b3b3b;
 }
 .discordscreen {
-position:relative;
+position: absolute;
 border-radius:  25px;
 border: solid 5px #373737; 
-width:70%;
-height:70%;
-left: 345px;
-top: 500px;
+left: 200px;
+top: 600px;
 }
 .promotion1 {
 font-size: 70px;
 font-family: "Roboto", sans-serif;
 font-weight: 900;
-color: #fff;
+color: #000;
 position: absolute;
 z-index : 0;
 top: 200px;
@@ -137,20 +155,21 @@ left: 720px;
 font-size: 50px;
 font-family: "Roboto", sans-serif;
 font-weight: 900;
-background: linear-gradient(90deg, rgba(255, 236, 125, 1), rgba(231, 231, 231, 1));
+background: #000;
+font-weight: lighter;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 z-index : 0;
 position: absolute;
 top: 300px;
-left: 550px;
+left: 276px;
 }
 .server-promotion-text {
   position: relative;
   top: 1660px;
   color: #fff;
   font-size: 70px;
-  left: 390px;
+  left: 520px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
@@ -272,30 +291,6 @@ transform: scale(1, 1);
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: #fff;
-}
-.swiper {
-  width: 70%;
-  height: 300%;
-  position: absolute;
-  top: 1600px;
-  left: 345px;
-  border-radius: 25px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
 }
 .cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
 	-webkit-box-sizing: border-box;
