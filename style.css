@@ -13,52 +13,6 @@ body{
   overflow-x: hidden;
   overflow-y: visible;
 }
-.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeOut 1s 1.5s forwards;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-.loading__logo {
-  opacity: 0;
-  animation: logo_fade 1s 0.5s forwards;
-  width: 175px;
-}
-
-@keyframes logo_fade {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
 /*reset*/
 ul {
 list-style: none;
