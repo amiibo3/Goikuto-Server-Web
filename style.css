@@ -29,12 +29,6 @@ font-family: "Roboto", sans-serif;
 font-weight: 600;
 }
 /*ナビゲーションのスタイル*/
-.about {
-top: 40px;
-left: 300px;
-font-size: 100%;
-color: #3b3b3b;
-}
 .disboard {
 top: 40px;
 left: 500px;
@@ -57,7 +51,6 @@ z-index: 6;
   position: absolute;
   border-radius: 100px;
   left: 808px;
-  z-index: 6;
   }
 header {
 position: fixed;
@@ -80,11 +73,11 @@ z-index: 7;
   position: absolute;
   left: 903px;
   top: 432px;
-  z-index: 7;
+  z-index: 1;
   }
-.japanese {
+.x {
 position: absolute;
-right: 500px;
+left: 300px;
 top: 39px;
 color: #3b3b3b;
 }
@@ -127,16 +120,16 @@ left: 276px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
-.always-active {
+.member {
   font-size: 100px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: #fff;
   position: absolute;
   top: 2900px;
-  left: 635px;
+  left: 485px;
 }
-.always-description {
+.member-description {
   font-size: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -144,18 +137,18 @@ left: 276px;
   color: #fff;
   position: absolute;
   top: 3050px;
-  left: 375px;
+  left: 405px;
 }
-.various-games {
+.vc {
   position: absolute;
   top: 3900px;
-  left: 610px;
+  left: 430px;
   font-size: 100px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: #fff;
 }
-.games-description1 {
+.vc-description1 {
   font-size: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -175,17 +168,19 @@ left: 276px;
   top: 4120px;
   left: 585px;
 }
-.server-promotion-picture1 {
+.server-promotion-picture1_2 {
   position: absolute;
   top: 3200px;
   left: 515px;
   width: 50%;
   height: 250%;
 }
-.server-promotion-picture2 {
+.server-promotion-picture2_2 {
   position: absolute;
   top: 4270px;
-  left: 725px;
+  left: 705px;
+  padding-bottom: 60px;
+  width: 500px;
 }
 .join {
   position: absolute;
@@ -202,6 +197,11 @@ left: 276px;
   position: absolute;
   top: 5400px;
   left: 790px;
+}
+.discord-widget2 {
+  position: absolute;
+  top: 3250px;
+  left: 750px;
 }
 .header-nav ul li {
   font-size: 18px;
